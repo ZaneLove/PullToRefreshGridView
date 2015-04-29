@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.zanelove.gridviewpulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/pull_refresh_grid"
+            android:columnWidth="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="auto_fit"
+            android:gravity="center_horizontal"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            android:scrollbars="none"
+            android:listSelector="@null"
+
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderBackground="#00000000"
+            ptr:ptrHeaderSubTextColor="#999999"
+            ptr:ptrHeaderTextColor="#333333"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrMode="both"
+            ptr:ptrRefreshableViewBackground="#00000000"
+            ptr:ptrScrollingWhileRefreshingEnabled="true"
+            ptr:ptrShowIndicator="false"
+            />
+</RelativeLayout>
